@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./sharkdo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <title>Sherry Yu</title>
+</head>
+<body>  
+    <div class="container boxy">
+        <div class="row">
+            <div class="col-3">
+              <img class="rounded mt-3 ms-3 position-absolute start-0 img" src="./me.jpg" height="350" alt="">
+            </div>
+          <div class="col-9 mt-3">
+            <h2 class="fw-bold">一、學歷</h2>
+            <h3>高中: <a class="reddy" rel="noopener" target="_blank" href="https://sci.nehs.hc.edu.tw/">國立新竹科學園區實驗高級中等學校 科學班</a> 畢業</h3>
+            <h3>大學: <a class="reddy" rel="noopener" target="_blank" href="https://web.ee.ntu.edu.tw/">國立臺灣大學 電機工程學系</a> 就讀中</h3>
+            <h2 class="fw-bold">二、興趣</h2>
+            <h3>1.喜歡打羽球和桌球，喜歡的羽球選手是<a target="_blank" href="https://www.facebook.com/profile.php?id=100044580272976">戴資穎</a>。</h3>
+            <h3>2.喜歡看動漫，喜歡的動漫是<a target="_blank" href="https://zh.wikipedia.org/wiki/Free!">《Free!男子游泳部》</a>。</h3>
+            <h3>2.喜歡看漫畫，最近在看的漫畫是<a target="_blank" href="https://www.webtoons.com/zh-hant/school/shaonvdeshijie/list?title_no=549&page=1">《少女的世界》</a>。</h3>
+            <p class="h3 fw-bold">Date/Time: <span id="datetime"></span></p>
+                <script> 
+                    function doDate() {
+                        function addZero(i) {
+                            if (i < 10) {i = "0" + i}
+                                return i;
+                        }
+                        var dateObj = new Date();
+                        var month =dateObj.getMonth() + 1;
+                        var day = dateObj.getDate();
+                        var year = dateObj.getFullYear();
+                        newdate = month + "-" + day + "-" + year;
+                        var h = addZero(dateObj.getHours());
+                        var m = addZero(dateObj.getMinutes());
+                        var s = addZero(dateObj.getSeconds());
+                        time = h + ":" + m + ":" + s;
+                        document.getElementById("datetime").innerHTML = newdate+" "+time;
+                    }
+                    setInterval(doDate, 1000);
+                </script>
+          </div>
+        </div>
+      </div>
+    <style>
+        body {
+            background-repeat: no-repeat, repeat;
+            background-size: cover;
+            background-image: url("./matsuoka.jpg"), url(./REDDY.png);
+            background-blend-mode: hard-light;
+          }
+    </style>  
+    <audio autoplay="autoplay" src="./yiruma-river-flows-in-you-(mp3convert.org).mp3" ></audio>
+    </body>
+</html>
