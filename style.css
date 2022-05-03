@@ -1,0 +1,22 @@
+.mypic {
+    display:block;
+    float: left;
+    padding-right: 20px;
+}
+.mytext {
+    float: middle;
+    
+}
+.reddy:hover {
+    color: red;
+  }
+.notrans {
+    opacity: 1;
+}
+.img {
+
+}
+.img:hover {
+    transition:.5s;
+    box-shadow: 10px 10px 5px rgba(0,0,0,0.5);
+}
